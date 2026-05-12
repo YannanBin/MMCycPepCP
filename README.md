@@ -1,22 +1,22 @@
-# MMCycPepCP各文件说明
+# MMCycPepCP File Descriptions
 
-- `datasets`--存放数据
-  - `lastfinal_cyclic_peptides.csv`--环肽的数据
+- `datasets`--Stores data
+  - `lastfinal_cyclic_peptides.csv`--Cyclic peptide data
 
-- `img`--存放照片
-  - `upset.tif`--数据对应的upset图
+- `img`--Stores images
+  - `upset.tif`--Upset plot corresponding to the data
 
-- `onlySmiles`--只使用了大语言模型
-  - `chemberta_multi_label_final`、`pubchem_multi_label_final`--保存的最佳模型
+- `onlySmiles`--Only uses large language models
+  - `chemberta_multi_label_final`、`pubchem_multi_label_final`--Saved best models
 
-- `test`文件夹--用来保存一些测试的代码
-  - `tokensTest.py`--测试 `ChemBERTa-77M-MLM` 模型的编码方式
-- `dataset.py`--数据处理
-- `evaluate.py`--评价指标
-- `generate3DMultithreaded.py`--使用多线程构建3D结构，得到5个构象择其优（能量值最小）
-- `loss.py`--损失函数
-- `main.py`--主程序
-- `model.py`--模型
+- `test`folder--Used to store testing code
+  - `tokensTest.py`--Tests the encoding method of the ChemBERTa-77M-MLM model
+- `dataset.py`--Data processing
+- `evaluate.py`--Evaluation metrics
+- `generate3DMultithreaded.py`--Uses multithreading to construct 3D structures, obtains 5 conformations, and selects the best one (the one with the minimum energy value)
+- `loss.py`--Loss functions
+- `main.py`--Main program
+- `model.py`--Model
 
 
 
