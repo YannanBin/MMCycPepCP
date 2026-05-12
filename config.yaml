@@ -1,0 +1,59 @@
+data:
+  data_path: 'datasets/lastfinal_cyclic_peptides.csv'
+  morganFingerprint_dir: 'features/morganFingerprint'
+  pdb_feature_dir: 'features/3d_feature'
+  pdb_dir: 'pdb_files'
+  morgan_dir: 'morganFingerprint'
+  max_len: 512
+  graph_cache_dir: 'features/graph_cache'
+  augment_prob: 0.1
+  coord_noise_std: 0.1
+
+model:
+  pre_model_path: 'pre_model/DeepChem/ChemBERTa-77M-MLM'
+#  pre_model_path: 'pre_model/seyonec/SMILES_tokenized_PubChem_shard00_160k'
+#  pre_model_path: 'pre_model/seyonec/ChemBERTa-zinc-base-v1'
+#  transformer_layer: 6
+  transformer_layer: 3
+  num_labels: 14
+  gnn_hidden_dim: 128
+  cnn_hidden_dim: 128
+  morgan_dim: 1024
+  mlp_hidden_dim: 128
+  tcf_layer: 4  # Layer to insert TCF (single TCF) or start multi-layer TCF
+#  tcf_layer: 2  # Layer to insert TCF (single TCF) or start multi-layer TCF
+  tcf_interval: null  # Set to 1 for TCF between consecutive layers, null for single TCF
+
+train:
+  batch_size: 16
+  learning_rate: 1.0e-4
+  weight_decay: 0.2
+  epochs: 100
+  dropout: 0.3
+  num_workers: 16
+  model_save_path: 'models/model.pt'
+  loss_type: 'bce'  # Options: 'bce', 'focal', 'cb focal', 'cb ce', 'asl', 'logit-adjust', 'label-smoothing'
+  use_label_weights: False
+  focal_alpha: 0.25
+#  focal_alpha: auto
+  focal_gamma: 2.0
+  asl_gamma_pos: 1.0
+#  asl_gamma_neg: auto
+  asl_gamma_neg: 2.0
+  cb_beta: 0.6
+  cb_gamma: 1.0
+  cb_alpha: 0.25
+  max_weight: 5.0
+  use_hard_negative: True
+  use_hard_positive: True
+  selected_epoch: 15
+  n_samples: 20
+  confidence_threshold_negative: 0.5
+  confidence_threshold_positive: 0.5
+
+  use_weighted_sampler: False
+  use_scheduler: False
+
+
+
+
