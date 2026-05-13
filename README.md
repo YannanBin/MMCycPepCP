@@ -13,7 +13,6 @@
   - `tokensTest.py`--Tests the encoding method of the `ChemBERTa-77M-MLM` model
 - `dataset.py`--Data processing
 - `evaluate.py`--Evaluation metrics
-- `generate3DMultithreaded.py`--Uses multithreading to construct 3D structures, obtains 5 conformations, and selects the best one (the one with the minimum energy value)
 - `loss.py`--Loss functions
 - `main.py`--Main program
 - `model.py`--Model
