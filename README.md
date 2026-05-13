@@ -30,7 +30,3 @@ To evaluate the model, you can run:
 
 ```
 python test.py
-
-
-
-
