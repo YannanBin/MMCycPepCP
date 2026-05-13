@@ -24,6 +24,14 @@
 - `utils.py` -- Seed setting, config loading, collate function
 - `config.yaml` -- All hyperparameters and paths
 
+## Create and activate environment
+
+```bash
+conda env create -f environment.yml
+conda activate CP
+```
+
+
 ## Training 
 
 The model relies on 3D atomic coordinates. To generate them in advance:
