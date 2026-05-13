@@ -1,4 +1,4 @@
-# MMCycPepCP File Descriptions
+# MFCPepPred File Descriptions
 
 - `datasets`--Stores data
   - `lastfinal_cyclic_peptides.csv`--Cyclic peptide data
