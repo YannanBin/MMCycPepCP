@@ -18,15 +18,16 @@
 - `main.py`--Main program
 - `model.py`--Model
 
-## Training and test MFCPepPred model
+## Training and tes MFCPepPred model
+
+The model relies on 3D atomic coordinates. To generate them in advance:
+
+```
+python generate3DMultithreaded.py
+```
 
 To train a model for prediction, you can run:
 
 ```
 python main.py
 ```
-
-To evaluate the model, you can run:
-
-```
-python test.py
