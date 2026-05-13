@@ -17,6 +17,12 @@
 - `loss.py`--Loss functions
 - `main.py`--Main program
 - `model.py`--Model
+- `train.py` -- Training model
+- `test.py` -- Model evaluation on test set
+- `sampling.py` -- Hard negative/positive mining
+- `imbalance_utils.py` -- Label statistics and weighted sampler
+- `utils.py` -- Seed setting, config loading, collate function
+- `config.yaml` -- All hyperparameters and paths
 
 ## Training 
 
