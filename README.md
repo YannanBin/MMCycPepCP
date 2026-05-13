@@ -13,6 +13,7 @@
   - `tokensTest.py`--Tests the encoding method of the `ChemBERTa-77M-MLM` model
 - `dataset.py`--Data processing
 - `evaluate.py`--Evaluation metrics
+-  `generate3DMultithreaded.py`--Construct 3D structures and obtain PDB files
 - `loss.py`--Loss functions
 - `main.py`--Main program
 - `model.py`--Model
