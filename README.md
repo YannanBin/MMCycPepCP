@@ -18,6 +18,19 @@
 - `main.py`--Main program
 - `model.py`--Model
 
+## Training and test MFCPepPred model
+
+To train a model for prediction, you can run:
+
+```
+python main.py
+```
+
+To evaluate the model, you can run:
+
+```
+python test.py
+
 
 
 
