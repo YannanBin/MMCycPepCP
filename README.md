@@ -18,7 +18,7 @@
 - `main.py`--Main program
 - `model.py`--Model
 
-## Training and tes MFCPepPred model
+## Training MFCPepPred model
 
 The model relies on 3D atomic coordinates. To generate them in advance:
 
