@@ -237,9 +237,9 @@ def train_model(
 
 def main():
     file_path = '../datasets/lastfinal_cyclic_peptides.csv'
-    # model_name = "../pre_model/DeepChem/ChemBERTa-77M-MLM"
+    model_name = "../pre_model/DeepChem/ChemBERTa-77M-MLM"
     # model_name = "../pre_model/seyonec/ChemBERTa-zinc-base-v1"
-    model_name = "../pre_model/seyonec/SMILES_tokenized_PubChem_shard00_160k"
+    # model_name = "../pre_model/seyonec/SMILES_tokenized_PubChem_shard00_160k"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     # 先加载数据以获取标签数量
